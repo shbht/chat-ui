@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="header" style="text-align: right;">
+    <div class="btn btn-danger" data-ng-click="chat.logout()">Logout</div>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Chat window</h3>
+        </div>
+        <div class="panel-body" style="min-height: 400px; max-height: 400px;overflow-y: scroll;">
+          <ul class="list-group" style="padding:0">
+            <li class="list-group-item" style="padding:0; border: none;"
+                data-ng-repeat="msg in chat.getMessages() track by $index">
+              <div ng-if="msg.type === 'msg'">
+                <small> [ {{msg.date | date:'dd-MM-yyyy hh:mm:ss a'}} ] </small>
+                <strong>{{msg.user}}</strong> : {{msg.text}}
+              </div>
+              <div ng-if="msg.type === 'info'">
+                <small> [ {{msg.text}} ] </small>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </div>
+        <div class="panel-footer" style="padding: 0">
+          <input type="text" style="width: 100%; height: 100%" data-ng-model="chat.text"
+                 data-ng-keypress="chat.send($event)" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="panel-title">Chat history</h3>
+            </div>
+            <div class="col-md-6">
+              <a style="color: white; cursor: pointer" data-ng-click="chat.getHistory()">Show history</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body" style="min-height: 400px; max-height: 400px;overflow-y: scroll;">
+          <ul class="list-group" style="padding:0">
+            <li class="list-group-item" style="padding:0; border: none;"
+                data-ng-repeat="msg in chat.history track by $index">
+              <div>
+                <small> [ {{msg.date | date:'dd-MM-yyyy hh:mm:ss a'}} ] </small>
+                <strong>{{msg.user}}</strong> : {{msg.text}}
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </div>
+        <div class="panel-footer" style="padding: 0">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
