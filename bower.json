@@ -6,8 +6,7 @@
     "bootstrap-sass-official": "^3.2.0",
     "angular-easyfb": "1.5.1",
     "angular-ui-router": "^0.4.2",
-    "angular-socket-io": "^0.7.0",
-    "socket.io-client": "^1.7.2"
+    "angular-socket-io": "^0.7.0"
   },
   "appPath": "app",
   "moduleName": "chatUiApp",

@@ -1,12 +1,35 @@
 # chat-ui
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.16.0.
+Angular frontend component for chat application
 
-## Build & development
+## pre-requisites
 
-Run `grunt` for building and `grunt serve` for preview.
+This project uses Sass for bootstrap, css. Plugin to convert scss to css requires `Ruby` and `compass gem`. Please
+install them first.
 
-## Testing
+## Setup
 
-Running `grunt test` will run the unit tests with karma.
+1. Check the npm packages:
+
+    ```
+    npm install
+    ```
+
+2. Check bower packages:
+
+  ```
+  bower install
+  ```
+  
+3. Create build:
+
+    ```
+    grunt
+    ```
+
+4. Start the server and preview
+
+    ```
+    grunt serve
+    ```
+
