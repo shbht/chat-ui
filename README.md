@@ -21,15 +21,15 @@ install them first.
     bower install
     ```
   
-3. Create build:
+3. Create build (run with sudo):
 
     ```
-    grunt
+    sudo grunt
     ```
 
-4. Start the server and preview
+4. Start the server and preview (run with sudo):
 
     ```
-    grunt serve
+    sudo grunt serve
     ```
 
