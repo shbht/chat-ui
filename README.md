@@ -17,9 +17,9 @@ install them first.
 
 2. Check bower packages:
 
-  ```
-  bower install
-  ```
+    ```
+    bower install
+    ```
   
 3. Create build:
 

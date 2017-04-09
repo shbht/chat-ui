@@ -158,6 +158,7 @@ module.exports = function (grunt) {
     // Empties folders to start fresh
     clean: {
       dist: {
+        force: true,
         files: [{
           dot: true,
           src: [
@@ -413,7 +414,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'lib/**.*'
           ]
         }, {
           expand: true,
