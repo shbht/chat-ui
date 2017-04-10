@@ -7,7 +7,7 @@ Angular frontend component for chat application
 This project uses Sass for bootstrap, css. Plugin to convert scss to css requires `Ruby` and `compass gem`. Please
 install them first. Try using following link for ubuntu server:
 
-    `https://gist.github.com/dgoguerra/100d765500512b6d68e3`
+    https://gist.github.com/dgoguerra/100d765500512b6d68e3
     
 Run chat-api / server first, otherwise few features won't work.
 
