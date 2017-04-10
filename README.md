@@ -5,7 +5,11 @@ Angular frontend component for chat application
 ## pre-requisites
 
 This project uses Sass for bootstrap, css. Plugin to convert scss to css requires `Ruby` and `compass gem`. Please
-install them first.
+install them first. Try using following link for ubuntu server:
+
+    `https://gist.github.com/dgoguerra/100d765500512b6d68e3`
+    
+Run chat-api / server first, otherwise few features won't work.
 
 ## Setup
 
@@ -21,15 +25,16 @@ install them first.
     bower install
     ```
   
-3. Create build (run with sudo):
+3. Create build (try running with sudo, if permissions error):
 
     ```
-    sudo grunt
+    grunt
     ```
 
-4. Start the server and preview (run with sudo):
+4. Start the server and preview (try running with sudo, if permissions error):
 
     ```
-    sudo grunt serve
+    grunt serve
     ```
 
+Server will start at localhost, port 9000.
